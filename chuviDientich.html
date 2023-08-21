@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        chieuDai;
+        chieuRong;
+        dienTich;
+        chuVi;
+
+        constructor(daiInput, rongInput) {
+            this.chieuDai = daiInput;
+            this.chieuRong = rongInput;
+            this.chuVi = (daiInput + rongInput)*2;
+            this.dienTich = daiInput * rongInput;
+        }
+        start(){
+            document.write(
+                `
+                Chiều dài : ${this.chieuDai} <br>
+                Chiều rộng: ${this.chieuRong} <br>
+                Diện tích: ${this.dienTich} <br>
+                Chu vi: ${this.chuVi}
+                `
+            )
+
+        }
+    }
+let daiInput = +prompt('chiều dài');
+let rongInput = +prompt('chiều rộng');
+
+let HCN = new Rectangle(daiInput, rongInput);
+HCN.start();
+</script>
+</body>
+</html>

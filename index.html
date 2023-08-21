@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oop</title>
+</head>
+<body>
+<script>
+class oto { // lớp
+    ten;
+    dongxe;
+    cannang;
+    mausac; // các thuộc tính
+
+    constructor(tenInput, dongxeInput, cannangInput, mausacInput) {
+        // hàm tạo: sử dụng để tạo các đối tượng từ lớp
+        this.ten = tenInput;
+        this.dongxe = dongxeInput;
+        this.cannang = cannangInput;
+        this.mausac = mausacInput;
+
+    }
+  start(){
+      console.log(this.ten + 'xe bắt đầu chạy')}; // đại diện cho đối tượng đang sử dụng
+}
+let oto1 = new oto('toyota', 300, 500, 'blue');
+console.log(oto1.mausac); // truy suất thuộc tính
+oto1.start(); //truy suất phương thức
+let oto2 = new oto('vinfast', 400, 400, 'red');
+console.log(oto2.mausac);
+oto2.start();
+</script>
+</body>
+</html>

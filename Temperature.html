@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        doC;
+        doF;
+        doK;
+
+        constructor(doCinput) {
+            this.doC = doCinput;
+            this.doF = doCinput * 1.8 + 32
+            this.doK = doCinput + 273.15
+        }
+
+        start() {
+            document.write(`
+            Độ C: ${this.doC}} <br>
+            Độ F: ${this.doF} <br>
+            Độ K: ${this.doK}
+            `)
+
+        }
+    }
+    let doCinput = +prompt('độ C')
+    let Tempe = new Temperature(doCinput)
+    Tempe.start();
+</script>
+</body>
+</html>
